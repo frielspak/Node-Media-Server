@@ -1,7 +1,7 @@
 {
-  "name": "node-media-server",
-  "version": "2.4.9",
-  "description": "A Node.js implementation of RTMP Server",
+  "name": "node-stream-server",
+  "version": "1.0.0",
+  "description": "Fork of illuspas/Node-Media-Server, a Node.js implementation of RTMP Server",
   "bin": "bin/app.js",
   "main": "src/node_media_server.js",
   "scripts": {
@@ -10,19 +10,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/illuspas/Node-Media-Server.git"
+    "url": "git+https://github.com:frielspak/Node-Stream-Server.git"
   },
   "keywords": [
+    "stream",
     "rtmp",
     "flv",
     "server"
   ],
-  "author": "Chen Mingliang",
+  "author": "Ricardo Malveiro",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/illuspas/Node-Media-Server/issues"
+    "url": "https://github.com/frielspak/Node-Stream-Server/issues"
   },
-  "homepage": "https://github.com/illuspas/Node-Media-Server#readme",
+  "homepage": "https://github.com/frielspak/Node-Stream-Server#readme",
   "dependencies": {
     "basic-auth-connect": "^1.0.0",
     "chalk": "^2.4.2",
