@@ -48,11 +48,14 @@ class NodeHttpServer {
       this.onConnect(req, res);
     });
 
-    let adminEntry = path.join(__dirname + '/public/admin/index.html');
-    if (Fs.existsSync(adminEntry)) {
-      app.get('/admin/*', (req, res) => {
-        res.sendFile(adminEntry);
-      });
+    if (this.config.http.admin_panel !== false) {
+      let adminEntry = path.join(__dirname + '/public/admin/index.html');
+      
+      if (Fs.existsSync(adminEntry)) {
+        app.get('/admin/*', (req, res) => {
+          res.sendFile(adminEntry);
+        });
+      }
     }
 
     if (this.config.http.api !== false) {
